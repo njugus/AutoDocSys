@@ -1,0 +1,86 @@
+/* Base Styles */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+.app-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.invoice-uploader {
+  max-width: 500px;
+  width: 100%;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  padding: 24px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #333;
+  text-align: center;
+}
+
+/* Dropzone Styles */
+.dropzone {
+  border: 2px dashed #ccc;
+  padding: 40px;
+  text-align: center;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-bottom: 20px;
+}
+
+.dropzone:hover,
+.dropzone-active {
+  border-color: #4a90e2;
+  background-color: #f0f7ff;
+}
+
+.dropzone p {
+  color: #666;
+  margin: 0;
+}
+
+/* Loading & Error States */
+.loading-message {
+  color: #4a90e2;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.error-message {
+  color: #e74c3c;
+  text-align: center;
+  margin: 10px 0;
+}
+
+/* Extracted Data */
+.extracted-data {
+  margin-top: 24px;
+}
+
+.extracted-data h2 {
+  font-size: 18px;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.extracted-data pre {
+  background: #f8f8f8;
+  padding: 12px;
+  border-radius: 4px;
+  overflow-x: auto;
+  font-family: monospace;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
