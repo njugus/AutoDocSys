@@ -18,8 +18,8 @@ const app = express()
 //use the middleware
 //handle file uploads e.g PDFs, images, etc
 app.use(fileUpload())
-//api to handle the uploaded pdf invoice
 
+//api to handle the uploaded pdf invoice
 app.post("/upload", async(req, res) => {
     try{
         //check whether req.files exists and whether the invoice file exists
@@ -37,6 +37,7 @@ app.post("/upload", async(req, res) => {
             "invoice_extractor.py",
             uploadPath
         ])
+        
         //take data in chunks and concatenate it to the final string
         let result = "";
         pythonProcess.on("data", (data) => {
